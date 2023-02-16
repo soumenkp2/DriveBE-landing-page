@@ -51,7 +51,7 @@
                     <form 
                     
                     onsubmit=
-                    "return false;"
+                    "sendEmail(); reset(); return false;"
                     
                     >
 
@@ -59,11 +59,11 @@
                         <h1>Book your query</h1>
                     </div>
                     <div class="form-fields">
-                        <input type="text" placeholder="name">
-                        <input type="number" placeholder="phone">
-                        <input type="text" placeholder="date">
-                        <input type="text" placeholder="city">
-                        <input type="text" placeholder="question" height="100px">
+                        <input type="text" placeholder="name" id="name" required>
+                        <input type="number" placeholder="phone" id="phone" required>
+                        <input type="text" placeholder="date" id="subject" required>
+                        <input type="text" placeholder="city" id="city" required>
+                        <input type="text" placeholder="question" height="100px" id="question" required>
                     </div>
                     <div class="search-cabs">
                         <button type="submit" style="background-color: black; color: #ffffff; font-weight: 500; font-family: 'Poppins' sans-serif; font-size: 10px;"><h1>Post</h1></button>
@@ -476,8 +476,11 @@ Firstly, if you have been involved in an accident and require emergency assistan
     Password : "06F369CC82EEEBBB65749AA456DA806A90F2",
     To : 'soumen.2024ec1031@kiet.edu',
     From : "soumenkp2@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : "Enquiry from website -> " + document.getElementById("subject").value,
+    Body : "Name : " + document.getElementById("name").value 
+           + "<br> Phone : " + document.getElementById("phone").value
+           + "<br> City : " + document.getElementById("city").value
+           + "<br> Question : " + document.getElementById("question").value,
 }).then(
   message => alert(message)
 );
