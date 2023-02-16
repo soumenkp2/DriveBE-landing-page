@@ -19,9 +19,9 @@
         <header class="header">
             <a href="#" id="logo"><img src="images/DriveBe.png" width="150px"></a>
             <nav class="navbar">
-                <a href="#">About us</a>
-                <a href="#">Why DriveBE</a>
-                <a href="#">Rides</a>
+                <a href="#aboutus">About us</a>
+                <a href="#ourproductsheadings">Why DriveBE</a>
+                <a href="#ourrides">Rides</a>
                 
             </nav>
             <a href="#" id="menu-bars" class="fas fa-bars"></a>
@@ -44,24 +44,29 @@
                 <br>
                 <br>
                 <p style="font-family: 'Roboto', sans-serif; font-weight: 400px;">To travel with the lowest fares choose CarRide Share. For a faster travel experience we have Share Express on some fixed routes with zero deviations. Choose your ride and zoom away!</p>
-                <a href="#" class="booknow">book now</a>
+                <a href="#comingsoon" class="booknow">book now</a>
             </div>
             <div class="inner-content">
                 <div class="contact-form">
-                    <div class="form-heading">
-                        <h1>book a cab</h1>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+
+                        <div class="form-heading">
+                        <h1>Book your query</h1>
                     </div>
                     <div class="form-fields">
                         <input type="text" placeholder="name">
                         <input type="number" placeholder="phone">
                         <input type="text" placeholder="date">
-                        <input type="text" placeholder="when">
-                        <input type="text" placeholder="pickup location">
-                        <input type="text" placeholder="drop location">
+                        <input type="text" placeholder="city">
+                        <input type="text" placeholder="question" height="100px">
                     </div>
                     <div class="search-cabs">
-                        <a href="#">Search cabs</a>
+                        <button type="submit" style="background-color: black; color: #ffffff; font-weight: 500; font-family: 'Poppins' sans-serif; font-size: 10px;"><h1>Post</h1></button>
+                        <!-- <a href="#">Post your query</a> -->
                     </div>
+
+                    </form>
+                    
                     
                 </div>
                 
@@ -71,28 +76,29 @@
 
 
 
-    <div class="our-products">
+    <!-- Our products -->
+    <div class="our-products" id="ourproductsheadings">
         <h1 class="heading">Our outstanding Products</h1>
         <div class="our-products-content">
             <div class="innerproducts-content">
                 <br>
                 <br>
-                <a href="#"><h3
+                <a href="#hireddrivers"><h3
                     style="align-items: center; text-align: left;
                     font-weight: 700; padding: 12px 24px;">Hire Verified Drivers 24x7</h3></a>
                 <br>
                 <br>
-                <a href="#"><h3
+                <a href="#trustabledrivers"><h3
                     style="align-items: center; text-align: left;
                     font-weight: 700; padding: 12px 24px;">On demand safe and trustable cabs</h3></a>
                 <br>
                 <br>
-                <a href="#"><h3
+                <a href="#motorinsurance"><h3
                     style="align-items: center; text-align: left;
                     font-weight: 700; padding: 12px 24px;">Motor Insurance Claims and Renewals</h3></a>
                 <br>
                 <br>
-                <a href="#"><h3
+                <a href="#travelcomfort"><h3
                     style="align-items: center; text-align: left;
                     font-weight: 700;padding: 12px 24px;">Enhance your travel comfort</h3></a>
                 
@@ -110,7 +116,7 @@
     <hr>
 
     <!-- 24x7 drivers -->
-    <div class="our-products">
+    <div class="our-products" id="hireddrivers">
         <h1 class="heading">24x7 Availibility of Driver's</h1>
         <div class="our-products-content">
             <div class="our-products-image">
@@ -123,12 +129,12 @@
             <div class="innerproducts-content">
                 <br>
                 <br>
-                <a href="#"><h3
+                <a ><h3
                     style="align-items: center; text-align: left;
                     font-weight: 600; padding: 12px 24px;">Hire Verified Drivers 24x7</h3></a>
                 <br>
                 <br>
-                <a href="#"><h4
+                <a ><h4
                     style="align-items: center; text-align: left;
                     font-weight: 600; color: black; padding: 6px 12px;">At DriveBE, we take the safety and security of 
                     our customers very seriously. That's why we only hire verified and experienced drivers to be
@@ -147,19 +153,19 @@ a valid driver's license and are properly insured to drive commercial vehicles. 
     <hr>
 
     <!-- Trustable drives -->
-    <div class="our-products">
+    <div class="our-products" id="trustabledrivers">
         <h1 class="heading">On demand safe and Trustable drives</h1>
         <div class="our-products-content">
             
             <div class="innerproducts-content">
                 <br>
                 <br>
-                <a href="#"><h3
+                <a ><h3
                     style="align-items: center; text-align: left;
                     font-weight: 600;  padding: 12px 24px;">Looking for trustworthy rides?</h3></a>
                 <br>
                 <br>
-                <a href="#"><h4
+                <a ><h4
                     style="align-items: center; text-align: left;
                     font-weight: 600; color: black; padding: 6px 12px;">At DriveBE, we are committed to providing trustworthy cab services to our customers. We understand that when you choose to ride with us, you are putting your trust in our hands, and we take that responsibility very seriously.
 
@@ -180,7 +186,7 @@ To ensure that our customers have a safe and reliable travel experience, we have
     <hr>
 
     <!-- Motor Insurance -->
-    <div class="our-products">
+    <div class="our-products" id="motorinsurance">
         <h1 class="heading">Motor Insurance Claims and Renewals</h1>
         <div class="our-products-content">
             <div class="our-products-image">
@@ -193,12 +199,12 @@ To ensure that our customers have a safe and reliable travel experience, we have
             <div class="innerproducts-content">
                 <br>
                 <br>
-                <a href="#"><h3
+                <a ><h3
                     style="align-items: center; text-align: left;
                     font-weight: 600;  padding: 12px 24px;">Claim Motor Insurance with DriveBE</h3></a>
                 <br>
                 <br>
-                <a href="#"><h4
+                <a ><h4
                     style="align-items: center; text-align: left;
                     font-weight: 600; color: black; padding: 6px 12px;">If you've been involved in a motor accident and need to claim your insurance, DriveBE is here to help. We understand that dealing with insurance claims can be a stressful and overwhelming process, which is why we have dedicated staff to assist you every step of the way.
 
@@ -213,19 +219,19 @@ Firstly, if you have been involved in an accident and require emergency assistan
 
     
     <!-- travel comfort -->
-    <div class="our-products">
+    <div class="our-products" id="travelcomfort">
         <h1 class="heading">Enhance your Travel Comfort</h1>
         <div class="our-products-content">
             
             <div class="innerproducts-content">
                 <br>
                 <br>
-                <a href="#"><h3
+                <a><h3
                     style="align-items: center; text-align: left;
                     font-weight: 600;  padding: 12px 24px;">Looking for a reliable and convenient way to travel around the city?</h3></a>
                 <br>
                 <br>
-                <a href="#"><h4
+                <a><h4
                     style="align-items: center; text-align: left;
                     font-weight: 600; color: black; padding: 6px 12px;">Look no further than DriveBE, your go-to 24x7 cab service provider!
                     At DriveBE, we understand that sometimes you need to get from one place to another quickly and
@@ -253,7 +259,7 @@ Firstly, if you have been involved in an accident and require emergency assistan
 
     <br>
 
-    <div class="image-content">
+    <div class="image-content" id="comingsoon">
         <img src="images/ps.png" alt="" width="100%">
     </div>
     
@@ -261,7 +267,7 @@ Firstly, if you have been involved in an accident and require emergency assistan
      
     
     
-    <div class="fast-booking">
+    <!-- <div class="fast-booking">
         <h1 class="fast-heading">we do best</h1>
         <h2>than you wish</h2>
         <div class="inner-fast">
@@ -302,39 +308,67 @@ Firstly, if you have been involved in an accident and require emergency assistan
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- about us -->
+    <div class="our-products" id="aboutus">
+        <h1 class="heading">About Us</h1>
+        <div class="our-products-content">
+            
+            <div class="innerproducts-content">
+                <!-- <a><h3
+                    style="align-items: center; text-align: left;
+                    font-weight: 600;  padding: 12px 24px;">Looking for a reliable and convenient way to travel around the city?</h3></a>
+                <br> -->
+                <a><h4
+                    style="align-items: center; text-align: left;
+                    font-weight: 800; color: black; padding: 6px 12px;">Look no further than DriveBE, your go-to 24x7 cab service provider!
+                    At DriveBE, we understand that sometimes you need to get from one place to another quickly and
+                     comfortably, without the hassle of navigating public transportation or the expense of owning your 
+                     own car. That's why we offer a fleet of well-maintained and fully-equipped vehicles, driven by 
+                     experienced and professional drivers who are available to serve you 24 hours a day, 7 days a week.</h4></a>
+            </div>
+            
+
+        </div>
     </div>
+    
+    
+
+     
 
 
-    <!--  -->
-    <div class="our-reasons">
-        <h1 class="heading">24x7 Availibility of Driver's</h1>
+
+    <!--more reasons to love-->
+    <div class="our-reasons" id="morelove">
+        <h1 class="heading">More Reasons to Love DriveBE</h1>
         <div class="our-reasons-content">
             
             
             <div class="our-reasonsinner-content" style="align-items: center; text-align: center;">
                 
-                <img src="images/search.png" alt="" style="align-items: center;text-align: center;" height="150px">
-                <a href="#"><h3
+                <img src="images/search.png" alt="" style="align-items: center;text-align: center;" height="100px">
+                <a ><h3
                     style="align-items: center; text-align: center;
-                    font-weight: 600; color: black; padding: 12px 24px;">Hire Verified</h3></a>
+                    font-weight: 600;color: rgb(255, 255, 255); padding: 12px 24px;">Easy search of cabs</h3></a>
                 
             </div>
 
             <div class="our-reasonsinner-content" style="align-items: center; text-align: center;">
                
-                <img src="images/placeholder.png" alt="" height="150px" style="align-items: center; text-align: center;">
-                <a href="#"><h3
+                <img src="images/placeholder.png" alt="" height="100px" style="align-items: center; text-align: center;">
+                <a ><h3
                     style="align-items: center; text-align: center;
-                    font-weight: 600; color: black; padding: 12px 24px;">Hire Verified</h3></a>
+                    font-weight: 600; color: rgb(255, 255, 255); padding: 12px 24px;">Flexible drop location</h3></a>
                 
             </div>
 
             <div class="our-reasonsinner-content" style=" align-items: center; text-align: center;">
                 
-                <img src="images/cab.png" alt="" height="150px" style="align-items: center;">
-                <a href="#"><h3
+                <img src="images/cab.png" alt="" height="100px" style="align-items: center;">
+                <a ><h3
                     style="align-items: center; text-align: center;
-                    font-weight: 600; color: black; padding: 12px 24px;">Hire Verified</h3></a>
+                    font-weight: 600; color: rgb(255, 255, 255); padding: 12px 24px;">Hire professional drivers</h3></a>
                 
             </div>
 
@@ -344,7 +378,10 @@ Firstly, if you have been involved in an accident and require emergency assistan
     </div>
 
 
-    <div class="main-tariff">
+    <br>
+    <hr>
+    <!-- our rides -->
+    <div class="main-tariff" id="ourrides">
         <h1>our <span>rides</span></h1>
         <div class="inner-tariff">
             <div class="tariff-container">
@@ -353,7 +390,7 @@ Firstly, if you have been involved in an accident and require emergency assistan
                     <h2>Sadan</h2>
                     <p style="font-family:'Roboto', sans-serif; font-weight: 500px;">A regular comfortable AC hatchback that becomes your everyday dependable ride. An economical option for daily commute.</p>
                     <h3>Small fares for short rides</h3>
-                    <a href="#">request now</a>
+                    <a href="#comingsoon">request now</a>
                     <br>
                 </div>
             </div>
@@ -363,7 +400,7 @@ Firstly, if you have been involved in an accident and require emergency assistan
                     <h2>SUV</h2>
                     <p style="font-family:'Roboto', sans-serif; font-weight: 500px;">The all too familiar auto ride, minus the hassle waiting and haggling for price .A convient way to travel everyday.</p>
                     <h3 class="yellow-section">Get an auto at your doorstep!</h3>
-                    <a href="#" class="btn-yellow">request now</a>
+                    <a href="#comingsoon" class="btn-yellow">request now</a>
                     <br>
                 </div>
             </div>
@@ -373,7 +410,7 @@ Firstly, if you have been involved in an accident and require emergency assistan
                     <h2>Hatch</h2>
                     <p style="font-family:'Roboto', sans-serif; font-weight: 700px;">SUVs with free Wi-fi and top drivers for a comfortable getaway with room for everyone including that extra bag.</p>
                     <h3>Perfect for weekend family getaways</h3>
-                    <a href="#">request now</a>
+                    <a href="#comingsoon">request now</a>
                     <br>
                 </div>
             </div>
@@ -383,6 +420,8 @@ Firstly, if you have been involved in an accident and require emergency assistan
 
     
 
+<br>
+<hr>
 
     <div class="some-faqs">
         <h1>cabs booking FAQs</h1>
@@ -391,8 +430,8 @@ Firstly, if you have been involved in an accident and require emergency assistan
                 <div class="ques">
                     <h2>What kind of cabs you can book from CarRide?</h2>
                 </div>
-                <div class="ans">
-                    <p>You can book following kinds of cabs from CarRide: airport cabs and intercity cabs / outstation cabs. You can book outstation cabs for both one-way transfers & round-trip transfers.</p>
+                <div class="ans" style="font-weight: 500; font-family: 'Poppins', sans-serif;">
+                    <p style="font-weight: 500; font-family: 'Poppins', sans-serif;">You can book following kinds of cabs from CarRide: airport cabs and intercity cabs / outstation cabs. You can book outstation cabs for both one-way transfers & round-trip transfers.</p>
                 </div>
             </div>
             <div class="faqs">
@@ -421,6 +460,24 @@ Firstly, if you have been involved in an accident and require emergency assistan
             </div>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail()
+        {
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "soumenkp2@gmail.com",
+    Password : "06F369CC82EEEBBB65749AA456DA806A90F2",
+    To : 'soumen.2024ec1031@kiet.edu',
+    From : "soumenkp2@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
